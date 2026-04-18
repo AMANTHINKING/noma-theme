@@ -1,0 +1,80 @@
+{% extends "layouts.master" %}
+{% set page_key = page.slug|lower %}
+{% block content %}
+  {% if 'choose' in page_key %}
+    <section class="section">
+      <div class="container page-hero">
+        <div>
+          <p class="eyebrow">How To Choose</p>
+          <h1 class="page-title">Choose by time of day, not guesswork.</h1>
+          <p class="page-copy">This page is built to answer the main buying question fast: which lens should I use, and when?</p>
+        </div>
+
+        <div class="page-media">
+          <img src="{{ 'images/noma-tag-front.jpg' | asset }}" alt="NOMA clear product tag">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container comparison-card">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Lens</th>
+              <th>Color</th>
+              <th>Best Use Time</th>
+              <th>Blue-Light Blocking</th>
+              <th>Best For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>CLEAR</td><td>Transparent</td><td>Morning to afternoon</td><td>Low</td><td>Work, study, gaming without color shift</td></tr>
+            <tr><td>EVENING</td><td>Yellow</td><td>After sunset</td><td>Medium</td><td>Easing into calmer evening screen use</td></tr>
+            <tr><td>NIGHT</td><td>Orange</td><td>Before sleep</td><td>High</td><td>Users who want stronger nighttime filtering</td></tr>
+            <tr><td>MAX</td><td>Red</td><td>Very late night</td><td>Maximum</td><td>Highest protection for intense late screen exposure</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  {% else %}
+    <section class="section">
+      <div class="container page-hero">
+        <div>
+          <p class="eyebrow">About NOMA</p>
+          <h1 class="page-title">A calmer way to live with screens.</h1>
+          <p class="page-copy">NOMA was built around a simple idea: heavy screen users need a better light routine, not louder marketing.</p>
+        </div>
+
+        <div class="page-media">
+          <img src="{{ 'images/noma-tag-back.jpg' | asset }}" alt="NOMA packaging back with QR code">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container story-grid">
+        <article class="about-panel">
+          <p class="eyebrow">Why It Exists</p>
+          <h3>For people living in front of screens.</h3>
+          <p>Gamers, professionals, students, and digital-heavy users now spend long hours around bright artificial light. NOMA gives them a cleaner, easier way to manage that exposure.</p>
+        </article>
+        <article class="about-panel">
+          <p class="eyebrow">What It Is</p>
+          <h3>A health-positioned product system.</h3>
+          <p>The product is presented as a tool for sleep support, lower eye strain, and better screen comfort, rather than as generic fashion eyewear.</p>
+        </article>
+        <article class="about-panel">
+          <p class="eyebrow">How It Feels</p>
+          <h3>Minimal, calm, and premium.</h3>
+          <p>The store stays quiet on purpose: warm neutrals, sharp typography, fewer distractions, and a more credible purchase journey.</p>
+        </article>
+        <article class="about-panel">
+          <p class="eyebrow">What Comes Next</p>
+          <h3>Ready for product proof and commerce details.</h3>
+          <p>The theme is structured so reviews, shipping reassurance, payment trust blocks, and real product data can be layered in without breaking the visual language.</p>
+        </article>
+      </div>
+    </section>
+  {% endif %}
+{% endblock %}

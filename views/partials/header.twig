@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/home">
+      <img src="{{ 'assets/images/logo-mark.jpg' | asset }}" alt="NOMA logo">
+      <span class="brand__wordmark">
+        <span class="brand__name">NOMA.</span>
+        <span class="brand__tag">{{ settings.brand_tagline|default('Screen Comfort+') }}</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="/home">Home</a>
+      <a href="/products/noma-lenses">Product</a>
+      <a href="/pages/choose">How to Choose</a>
+      <a href="/pages/about">About NOMA</a>
+      <a class="nav-cta" href="{{ settings.primary_cta_url|default('/products/noma-lenses') }}">
+        {{ settings.primary_cta_label|default('Shop Now') }}
+      </a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title|default('NOMA') }}</title>
+    <meta name="description" content="{{ page.description|default('NOMA blue-light eyewear for better sleep, lower eye strain, and calmer screen time.') }}">
+    <link rel="stylesheet" href="{{ 'assets/css/app.css' | asset }}">
+  </head>
+  <body>
+    <a class="sr-only" href="#main-content">Skip to content</a>
+
+    <div class="site-shell">
+      {% include 'views/partials/header.twig' %}
+
+      <main id="main-content">
+        {% block content %}{% endblock %}
+      </main>
+
+      {% include 'views/partials/footer.twig' %}
+    </div>
+
+    <script src="{{ 'assets/js/app.js' | asset }}" defer></script>
+  </body>
+</html>

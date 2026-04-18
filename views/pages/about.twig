@@ -1,0 +1,47 @@
+{% extends 'views/layout.twig' %}
+
+{% block content %}
+  <section class="section">
+    <div class="container page-hero">
+      <div>
+        <p class="eyebrow">About NOMA</p>
+        <h1 class="page-title">A calmer way to live with screens.</h1>
+        <p class="page-copy">
+          NOMA was built around a simple idea: heavy screen users need a better light routine, not louder marketing.
+        </p>
+      </div>
+
+      <div class="page-media">
+        <img src="{{ 'assets/images/logo-tag-back.jpg' | asset }}" alt="NOMA packaging back with QR code">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container story-grid">
+      <article class="about-panel">
+        <p class="eyebrow">Why It Exists</p>
+        <h3>For people living in front of screens.</h3>
+        <p>Gamers, professionals, students, and digital-heavy users now spend long hours around bright artificial light. NOMA gives them a cleaner, easier way to manage that exposure.</p>
+      </article>
+
+      <article class="about-panel">
+        <p class="eyebrow">What It Is</p>
+        <h3>A health-positioned product system.</h3>
+        <p>The product is presented as a tool for sleep support, lower eye strain, and better screen comfort, rather than as generic fashion eyewear.</p>
+      </article>
+
+      <article class="about-panel">
+        <p class="eyebrow">How It Feels</p>
+        <h3>Minimal, calm, and premium.</h3>
+        <p>The store stays quiet on purpose: warm neutrals, sharp typography, fewer distractions, and a more credible purchase journey.</p>
+      </article>
+
+      <article class="about-panel">
+        <p class="eyebrow">What Comes Next</p>
+        <h3>Ready for product proof and commerce details.</h3>
+        <p>The theme is structured so reviews, shipping reassurance, payment trust blocks, and real product data can be layered in without breaking the visual language.</p>
+      </article>
+    </div>
+  </section>
+{% endblock %}

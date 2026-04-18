@@ -1,0 +1,81 @@
+{% extends 'views/layout.twig' %}
+
+{% block content %}
+  <section class="section">
+    <div class="container page-hero">
+      <div>
+        <p class="eyebrow">How To Choose</p>
+        <h1 class="page-title">Choose by time of day, not guesswork.</h1>
+        <p class="page-copy">
+          This page is built to answer the main buying question fast: which lens should I use, and when?
+        </p>
+      </div>
+
+      <div class="page-media">
+        <img src="{{ 'assets/images/logo-tag-front.jpg' | asset }}" alt="NOMA clear product tag">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container comparison-card">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Lens</th>
+            <th>Color</th>
+            <th>Best Use Time</th>
+            <th>Blue-Light Blocking</th>
+            <th>Best For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CLEAR</td>
+            <td>Transparent</td>
+            <td>Morning to afternoon</td>
+            <td>Low</td>
+            <td>Work, study, gaming without color shift</td>
+          </tr>
+          <tr>
+            <td>EVENING</td>
+            <td>Yellow</td>
+            <td>After sunset</td>
+            <td>Medium</td>
+            <td>Easing into calmer evening screen use</td>
+          </tr>
+          <tr>
+            <td>NIGHT</td>
+            <td>Orange</td>
+            <td>Before sleep</td>
+            <td>High</td>
+            <td>Users who want stronger nighttime filtering</td>
+          </tr>
+          <tr>
+            <td>MAX</td>
+            <td>Red</td>
+            <td>Very late night</td>
+            <td>Maximum</td>
+            <td>Highest protection for intense late screen exposure</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container testimonial-grid">
+      <article class="testimonial-card">
+        <p class="eyebrow">Recommendation</p>
+        <h3>Start simple for daytime users.</h3>
+        <p>If a customer mainly wants relief during work or study, CLEAR is the easiest entry point.</p>
+      </article>
+
+      <article class="testimonial-card">
+        <p class="eyebrow">Recommendation</p>
+        <h3>Move stronger as the night gets later.</h3>
+        <p>EVENING, NIGHT, then MAX create a straightforward path that customers can understand instantly.</p>
+      </article>
+    </div>
+  </section>
+{% endblock %}

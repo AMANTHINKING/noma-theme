@@ -1,0 +1,127 @@
+{% extends 'views/layout.twig' %}
+
+{% block content %}
+  <section class="section">
+    <div class="container">
+      <div class="product-layout">
+        <div class="product-media">
+          <img src="{{ 'assets/images/lenses-overview.jpg' | asset }}" alt="NOMA product lineup with four lens colors">
+        </div>
+
+        <div class="product-side-grid">
+          <div>
+            <p class="eyebrow">Product Page</p>
+            <h1 class="product-title">NOMA Blue-Light Lens Collection</h1>
+            <p class="product-copy">
+              A single product system with four lens modes for different hours of the day. Clean visuals, concise education, and a faster route to purchase.
+            </p>
+
+            <ul class="product-bullets">
+              <li>Four lens types: Clear, Evening, Night, Max</li>
+              <li>Built for gamers, professionals, students, and heavy screen users</li>
+              <li>Minimal explanation blocks that reduce friction before checkout</li>
+            </ul>
+          </div>
+
+          <section class="lens-selector" aria-labelledby="lens-selector-title">
+            <p class="eyebrow">Choose Lens</p>
+            <h2 id="lens-selector-title">Pick the right filter level</h2>
+
+            <div class="lens-options" role="tablist" aria-label="Lens options">
+              <button
+                class="lens-option"
+                type="button"
+                data-lens-option
+                data-name="CLEAR"
+                data-tone="Transparent"
+                data-time="Day / Work / Study"
+                data-level="Low"
+                data-description="Reduces eye strain without changing how colors look."
+                data-usage="Best for office work, studying, and gaming during the day.">
+                <span class="lens-option__name">CLEAR</span>
+                <span class="lens-option__meta">Transparent • Daytime</span>
+              </button>
+
+              <button
+                class="lens-option"
+                type="button"
+                data-lens-option
+                data-name="EVENING"
+                data-tone="Soft Yellow"
+                data-time="After sunset"
+                data-level="Medium"
+                data-description="Gradually lowers blue-light exposure during evening hours."
+                data-usage="Best after Maghrib, during casual screen time, or late work sessions.">
+                <span class="lens-option__name">EVENING</span>
+                <span class="lens-option__meta">Yellow • Evening</span>
+              </button>
+
+              <button
+                class="lens-option"
+                type="button"
+                data-lens-option
+                data-name="NIGHT"
+                data-tone="Orange"
+                data-time="Before sleep"
+                data-level="High"
+                data-description="Stronger filtering intended for the final hours before bed."
+                data-usage="Best before sleep when customers want a stronger nighttime routine.">
+                <span class="lens-option__name">NIGHT</span>
+                <span class="lens-option__meta">Orange • Pre-sleep</span>
+              </button>
+
+              <button
+                class="lens-option"
+                type="button"
+                data-lens-option
+                data-name="MAX"
+                data-tone="Deep Red"
+                data-time="Late night / Maximum protection"
+                data-level="Maximum"
+                data-description="Highest filtering level for intense nighttime blue-light protection."
+                data-usage="Best for users staying up very late or wanting the strongest filter level.">
+                <span class="lens-option__name">MAX</span>
+                <span class="lens-option__meta">Red • Maximum</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="usage-panel" data-lens-display aria-live="polite">
+            <p class="eyebrow">Lens Details</p>
+            <h3><span data-name>CLEAR</span> lens overview</h3>
+            <p data-description>Reduces eye strain without changing how colors look.</p>
+
+            <div class="use-grid" style="margin-top:18px;">
+              <div class="use-card">
+                <strong>Color</strong>
+                <p data-tone>Transparent</p>
+              </div>
+
+              <div class="use-card">
+                <strong>Use Time</strong>
+                <p data-time>Day / Work / Study</p>
+              </div>
+
+              <div class="use-card">
+                <strong>Blocking</strong>
+                <p data-level>Low</p>
+              </div>
+            </div>
+
+            <div class="use-card" style="margin-top:18px;">
+              <strong>When to use this lens</strong>
+              <p data-usage>Best for office work, studying, and gaming during the day.</p>
+            </div>
+          </section>
+
+          <section class="review-panel">
+            <p class="eyebrow">Reviews</p>
+            <h3>Placeholder section ready for customer proof.</h3>
+            <strong>“Comfortable for long work sessions and much easier on the eyes at night.”</strong>
+            <small>Add native Salla reviews, testimonial cards, or imported proof once the store is live.</small>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

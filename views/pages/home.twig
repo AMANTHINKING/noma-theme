@@ -1,0 +1,229 @@
+{% extends 'views/layout.twig' %}
+
+{% block content %}
+  <section class="hero">
+    <div class="container hero__wrap">
+      <div class="hero__content">
+        <p class="eyebrow">Tech Wellness</p>
+        <h1 class="hero-title">{{ settings.hero_title|default('Better Sleep Starts Here') }}</h1>
+        <p class="hero-copy">
+          {{ settings.hero_body|default('NOMA turns screen time into a calmer nightly routine with lens options built for work, evenings, and sleep.') }}
+        </p>
+
+        <div class="hero__meta" aria-label="Key benefits">
+          <span class="hero__pill">Sleep support</span>
+          <span class="hero__pill">Reduced eye strain</span>
+          <span class="hero__pill">Built for long screen hours</span>
+        </div>
+
+        <div class="hero__actions">
+          <a class="button button--primary" href="{{ settings.primary_cta_url|default('/products/noma-lenses') }}">
+            {{ settings.primary_cta_label|default('Shop Now') }}
+          </a>
+          <a class="button button--secondary" href="/pages/choose">Find Your Lens</a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__card">
+          <span>NOMA</span>
+          <span>4 Lens Modes</span>
+        </div>
+
+        <div class="hero__image">
+          <img src="{{ 'assets/images/lenses-overview.jpg' | asset }}" alt="NOMA lens lineup showing Clear, Evening, Night, and Max">
+          <div class="hero__floating-note">
+            <strong>Tool, not accessory</strong>
+            <p>Built to improve how users work, recover, and sleep around digital light.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Lens Collection</p>
+      <h2 class="section-title">Four lenses for one cleaner routine.</h2>
+
+      <div class="lens-grid">
+        <article class="lens-card" style="--lens-accent:#d8b182;">
+          <span class="lens-card__label">CLEAR</span>
+          <h3>Work without color shift.</h3>
+          <p>Daytime clarity for professionals, students, and anyone spending long hours on screens.</p>
+          <div class="lens-card__meta">
+            <span>Time: Day / Work / Study</span>
+            <span>Filter level: Low</span>
+          </div>
+        </article>
+
+        <article class="lens-card" style="--lens-accent:#c6a33b;">
+          <span class="lens-card__label">EVENING</span>
+          <h3>Ease into the night.</h3>
+          <p>A light yellow lens that gradually lowers blue-light exposure after sunset.</p>
+          <div class="lens-card__meta">
+            <span>Time: Evening</span>
+            <span>Filter level: Medium</span>
+          </div>
+        </article>
+
+        <article class="lens-card" style="--lens-accent:#c36b1e;">
+          <span class="lens-card__label">NIGHT</span>
+          <h3>Protect melatonin hours.</h3>
+          <p>Orange filtering for the final stretch before bed, when light habits matter most.</p>
+          <div class="lens-card__meta">
+            <span>Time: Before sleep</span>
+            <span>Filter level: High</span>
+          </div>
+        </article>
+
+        <article class="lens-card" style="--lens-accent:#7f1515;">
+          <span class="lens-card__label">MAX</span>
+          <h3>Maximum night protection.</h3>
+          <p>Deep red coverage for users who need the strongest blue-light blocking late at night.</p>
+          <div class="lens-card__meta">
+            <span>Time: Late night</span>
+            <span>Filter level: Maximum</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container benefits-wrap">
+      <div>
+        <p class="eyebrow">Why It Matters</p>
+        <h2 class="section-title">Designed around sleep, strain, and focus.</h2>
+        <p class="section-copy">
+          NOMA positions screen comfort as a daily health tool. The storefront keeps the message calm, credible, and easy to understand.
+        </p>
+      </div>
+
+      <div class="benefit-grid">
+        <article class="benefit-card">
+          <span class="benefit-card__title">Sleep</span>
+          <h3>Calmer evenings</h3>
+          <p>Guide customers toward better nighttime light habits without exaggerated claims.</p>
+        </article>
+
+        <article class="benefit-card">
+          <span class="benefit-card__title">Eye Strain</span>
+          <h3>Lower fatigue</h3>
+          <p>Help long-session users feel more comfortable during work, study, and gaming.</p>
+        </article>
+
+        <article class="benefit-card">
+          <span class="benefit-card__title">Focus</span>
+          <h3>Functional routine</h3>
+          <p>Make lens selection easy so users know which tool to use at each time of day.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container comparison-wrap">
+      <div>
+        <p class="eyebrow">Lens Guide</p>
+        <h2 class="section-title">A clean comparison customers can scan in seconds.</h2>
+        <p class="section-copy">
+          This section keeps decision-making simple and avoids the visual clutter common in generic storefronts.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Lens</th>
+              <th>Color</th>
+              <th>Use Time</th>
+              <th>Blocking</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CLEAR</td>
+              <td>Transparent</td>
+              <td>Day / Work / Study</td>
+              <td>Low</td>
+            </tr>
+            <tr>
+              <td>EVENING</td>
+              <td>Yellow</td>
+              <td>After sunset</td>
+              <td>Medium</td>
+            </tr>
+            <tr>
+              <td>NIGHT</td>
+              <td>Orange</td>
+              <td>Before sleep</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>MAX</td>
+              <td>Red</td>
+              <td>Late night</td>
+              <td>Maximum</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container story-wrap">
+      <div>
+        <p class="eyebrow">Brand Positioning</p>
+        <h2 class="section-title">Health-led, minimal, and quietly premium.</h2>
+        <p class="section-copy">
+          The visual system uses beige warmth, precise black typography, and restrained amber accents so NOMA feels closer to wellness tech than to a typical eyewear shop.
+        </p>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-card">
+          <span class="story-card__title">Minimal</span>
+          <h3>Less clutter, more clarity</h3>
+          <p>Generous whitespace and simple messaging keep attention on the product and its use case.</p>
+        </article>
+
+        <article class="story-card">
+          <span class="story-card__title">Functional</span>
+          <h3>One routine, four modes</h3>
+          <p>Each lens exists for a clear moment in the day, helping customers self-select fast.</p>
+        </article>
+
+        <article class="story-card">
+          <span class="story-card__title">Credible</span>
+          <h3>Wellness, not hype</h3>
+          <p>Copy is direct and calm so the store feels premium without sounding exaggerated.</p>
+        </article>
+
+        <article class="story-card">
+          <span class="story-card__title">Responsive</span>
+          <h3>Built for mobile first</h3>
+          <p>Key sections stack cleanly on smaller screens with large tap targets and readable spacing.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-panel">
+        <p class="eyebrow">Ready to Shop</p>
+        <h2 class="section-title">Help customers feel they are buying a health tool, not just glasses.</h2>
+        <p class="section-copy">
+          The conversion path stays intentionally simple: understand the lens, trust the benefit, and move directly to checkout.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="{{ settings.primary_cta_url|default('/products/noma-lenses') }}">Shop Now</a>
+          <a class="button button--secondary" href="/pages/about">About NOMA</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
